@@ -1,7 +1,14 @@
-.class1 {
+.box1 {
   background-color: #007FFF;
-  width: 400px;
-  border: 20px solid black;
-  padding: 50px;
   box-sizing: border-box;
+  padding: 50px;
+  margin: 100px;
+}
+
+h2 {
+  font-size: 60px;
+  margin: 0;
+  color: white;
+  background-color: #FA8072;
+  margin: -120px 0 0 -50px;
 }
