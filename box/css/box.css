@@ -1,0 +1,7 @@
+.class1 {
+  background-color: #007FFF;
+  width: 400px;
+  border: 20px solid black;
+  padding: 50px;
+  box-sizing: border-box;
+}

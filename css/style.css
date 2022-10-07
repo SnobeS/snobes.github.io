@@ -1,34 +1,22 @@
-.text1 {
-  font-size: 72px;
-  font-family: forte;
+.title1 {
+  font-size: 96px;
+  font-family: impact;
+  font-style: italic;
 }
 
-.text2 {
+.tit2 {
+  font-size: 40px;
+  font-family: lucida bright bold;
+  font-style: italic;
+}
+.tit3 {
   font-size: 32px;
-  font-family: fantasy;
-}
+  font-family: lucida bright bold;
+  font-style: italic;
 
-.link1 {
-  font-size: 20px;
-  font-family: Arial Black;
-}
-
-.test1 {
-  font-size: 20px;
-  font-family: Arial Black;
-}
-
-.test2 {
-  font-size: 20px;
-  font-family: Arial Black;
-}
-
-.table1 {
-font-size: 32px;
-font-family: Impact;
 }
 body {
-  background-image: url(https://img.freepik.com/free-vector/abstract-blue-geometric-shapes-background_1035-17545.jpg?w=2000);
+  background-image: url(https://img.freepik.com/premium-vector/white-elegant-texture-background_23-2148433720.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
