@@ -1,6 +1,6 @@
 ul {
     list-style-type: none;
-    margin: 75px -15px 0 20px;
+    margin: 5% -3% 0 10%;
     padding: 0;
     width: 10%;
     background-color: #161616;
@@ -15,7 +15,7 @@ ul {
     color: #ffffff;
     padding: 18px 16px;
     text-decoration: none;
-    font-size: 32px;
+    font-size: 275%;
     text-align: center;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
  
@@ -34,7 +34,7 @@ ul {
 .otsikon-container {
     margin-left: 375px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 50px;
+    font-size: 300%;
     padding-top: 75px;
     color: white;
 }
