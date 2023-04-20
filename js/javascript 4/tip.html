@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function tip(totalAmount, tip=10, returnTipOnly=false) {
+            tip = tip / 100;
+            console.log("tip as % is ", tip)
+            var tipAmount = totalAmount * tip
+            totalAmount = totalAmount + tip
+            return totalAmount
+        }
+
+        var totalBill = tip(25, 10);
+        console.log(totalBill) 
+
+        var totalTip = tip(25, 10, true);
+        console.log(totalTip)
+
+
+    </script>
+</body>
+</html>

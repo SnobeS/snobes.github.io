@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Teksti jota muokataan -->
+    <h1 id="teksti2"></h1>
+    
+    <!-- Napit ja mitä ne tekevät -->
+    <button id="sini">Sininen</button>
+    <button id="puna">Punainen</button>
+    <button id="vihre">Vihreä</button>
+    <button id="musta">Palauta</button>
+    <p>Vaihda tekstin väriä</p>
+    <br>
+    <!-- Napin koon muokkaus -->
+    <button id="bigger">Suurenna</button>
+    <button id="smaller">Pienennä</button>
+    <button id="normal">Palauta</button>
+    <p>Vaihda tekstin kokoa</p>
+
+    <script>
+
+        /* Prompt mihin syötät tekstin */ 
+         var teksti = prompt("Syötä tekstisi tähän...");
+        document.getElementById("teksti2").innerHTML = teksti; 
+        
+        /* Kun painat nappia kyseinen väri vaihtuu */
+
+        /* Sininen */
+        document.getElementById("sini").onclick = function(){
+	        document.getElementById("teksti2").style.color = 'blue';
+        }
+        /* Punainen */
+        document.getElementById("puna").onclick = function(){
+    	    document.getElementById("teksti2").style.color = 'red';
+        }
+        /* Vihreä */
+        document.getElementById("vihre").onclick = function(){
+    	    document.getElementById("teksti2").style.color = 'green';
+        }
+        /* Musta */
+        document.getElementById("musta").onclick = function(){
+    	    document.getElementById("teksti2").style.color = 'black';
+        }
+        
+
+        /* Kun painat nappia tekstin koko muuttuu */
+        /* Suuremmaksi */
+        document.getElementById("bigger").onclick = function(){
+	        document.getElementById("teksti2").style.fontSize = '64px';
+        }
+        /* Pienemmäksi */
+        document.getElementById("smaller").onclick = function(){
+    	    document.getElementById("teksti2").style.fontSize = '16px';
+        }
+        /* Normaaliksi */
+        document.getElementById("normal").onclick = function(){
+    	    document.getElementById("teksti2").style.fontSize = '32px';
+        }
+
+
+        /* Jos prompt on tyhjä niin tulee error teksti */
+        if(teksti == "") {
+            alert("Et syöttänyt tekstiä")
+        }
+
+    </script>
+
+
+</body>
+</html>

@@ -4,19 +4,33 @@ const ctx = canvas.getContext("2d");
 let x = 100;
 let y = 100;
 let radius = 50;
+let speed = 10;
 
+let upPressed = false;
 let downPressed = false;
+let leftPressed = false;
+let rightPressed = false;
 
-function drawGame(){
+function drawGame() {
     requestAnimationFrame(drawGame);
     clearScreen();
-    input();
+    inputs();
     drawGreenBlob();
 }
 
-function input() {
+function inputs() {
+        
+    if(upPressed) {
+        y =  y - speed;
+    }
     if (downPressed) {
-        y = y + 10;
+        y = y + speed;
+    }
+    if (leftPressed) {
+        x = x - speed;
+    }
+    if (rightPressed) {
+        x = x + speed;
     }
 }
 
@@ -38,13 +52,40 @@ document.body.addEventListener('keyup', keyUp);
 
 function keyDown(event) {
     
-    if (event.keyCode == 40) {
+    if(event.keyCode == 38) {
+        upPressed = true;
+    }
+    
+    if(event.keyCode == 40) {
         downPressed = true;
+    }
+
+    if(event.keyCode == 37) {
+        leftPressed = true;
+    }
+
+    if(event.keyCode == 39) {
+        rightPressed = true;
     }
 }
 
+function keyUp(event) {
     
-function keyUp(event) {}
+    if (event.keyCode == 38) {
+        downPressed = false;
+    }
 
+    if(event.keyCode == 40) {
+        downPressed = false;
+    }
+
+    if(event.keyCode == 37) {
+        leftPressed = false;
+    }
+
+    if(event.keyCode == 39) {
+        rightPressed = false;
+    }
+}
 
 drawGame();
