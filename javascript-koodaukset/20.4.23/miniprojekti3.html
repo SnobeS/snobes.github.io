@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Miniproject Event Listeners</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+    
+    <div class="input-field-container">
+        <input type="text" class="inputfield" id="inputField" placeholder="Syötä tähän lämpötila...">
+        <button class="submit-button" id="submitButton" onclick="tempFunction()">Lähetä</button>
+    </div>
+    <h2 id="tulos">Tähän tulee teksti</h2>
+    
+    <script>
+        
+        alert("Syötä lämpötila tyhjään kenttään")
+
+        var temp = document.querySelector(".input-field")
+        var result = document.querySelector("tulos")
+        var inputfield = document.querySelector("inputfield")
+
+        function tempFunction() {
+                console.log("nappia painettiin")
+                if(temp === "5") {
+                    console.log("lämpötila syötetty")
+            }
+        }
+
+        inputfield.addEventListener('keyup', function(tempFunction) {})
+        
+        
+
+    </script>
+</body>
+</html>

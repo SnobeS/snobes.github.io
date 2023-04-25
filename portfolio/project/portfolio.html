@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Miko Lehtola's Portfolio Website</title>
+</head>
+<body>
+    
+    <!-- Upper title -->
+    <div class="upper-title-container">
+        <h1 class="title-portfolio">Portfolio</h1>
+    </div>
+
+    <!-- Horizontal navigation bar -->
+    <div class="topnav-container">
+        <ul class="navbar-list">
+            <li><a href="portfolio.html" class="active-home">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Skills</a></li>
+            <li><a href="#">Contacts</a></li>
+            <!-- Social icons here -->
+        </ul>
+    </div>
+
+    <!-- Container for title and paragraph below it -->
+    <div class="title-container">
+        <div class="hello-container">
+            <h2>Hello</h2>
+        </div>
+        <!-- Main title -->
+        <div class="main-title">
+            <h1>I'm Developer</h1>
+        </div>
+        <!-- Paragraph below title -->
+        <div class="p-below-title">
+            <p>Welcome to my portfolio website! I am Miko, a Front-End junior developer interested in coding and technology. On this website you can find information about me and my skills, experience etc. All this is hand coded!
+            </p>
+        </div>
+    </div>
+
+    <!-- Container for an image -->
+    <div class="image-container">
+        <img src="#" alt="image">
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <p class="footer-text">Miko Lehtola</p>
+        </div>
+    </footer>
+
+
+
+    <style>
+
+        body {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        .upper-title-container {
+            border: 3px dotted green;
+            text-align: center;
+            width: 8%;
+        }
+
+        .topnav-container {
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background-color: rgb(255, 255, 255);
+            width: 100%;
+
+            border: 3px dotted blue;
+        }
+
+            .navbar-list {
+                display: block;
+            }
+
+        .title-container {
+            float: left;
+            margin-left: 10%;
+            border: 3px dotted red;
+            width: 35%;
+        }
+
+            .hello-container {
+                font-size: 200%;
+                margin: 0 0 0 10%;
+            }
+
+            .main-title {
+                text-align: center;
+                font-size: 200%;
+            }
+
+            .p-below-title {
+                text-align: center;
+                font-size: 120%;
+                width: 75%;
+                border: 3px dotted rgb(0, 255, 98);
+                margin: -7% 0 0 11%;
+            }
+
+
+
+        .footer-container {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            background-color: rgb(255, 255, 255);
+            width: 100%;
+            
+            border: 3px dotted cyan;
+        }
+
+            .footer-text {
+                font-size: 100%;
+                text-align: center;
+            }
+    
+            
+    @media screen and (max-width: 1000px) {
+
+        .p-below-title {
+            font-size: 110%;
+            width: 100%;
+        }
+
+        .main-title {
+            font-size: 200%;
+        }
+    }
+
+    @media screen and (max-width: 438px) {
+
+        .p-below-title {
+            font-size: 100%;
+            width: 100%;
+        }
+
+        .main-title {
+            font-size: 100%;
+        }
+    }
+
+    </style>
+
+    <script></script>
+
+</body>
+</html>
