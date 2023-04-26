@@ -35,8 +35,7 @@
         </div>
         <!-- Paragraph below title -->
         <div class="p-below-title">
-            <p>Welcome to my portfolio website! I am Miko, a Front-End junior developer interested in coding and technology. On this website you can find information about me and my skills, experience etc. All this is hand coded!
-            </p>
+            <p>Welcome to my portfolio website! I am Miko, a Front-End junior developer interested in coding and technology. On this website you can find information about me and my skills, experience etc. All this is hand coded!</p>
         </div>
     </div>
 
@@ -44,21 +43,21 @@
     <div class="image-container">
         <img src="#" alt="image">
     </div>
-
+    
     <footer>
         <div class="footer-container">
             <p class="footer-text">Miko Lehtola</p>
         </div>
     </footer>
-
-
-
+    
+    
+    
     <style>
 
         body {
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         }
-
+        
         .upper-title-container {
             border: 3px dotted green;
             text-align: center;
@@ -71,11 +70,11 @@
             text-align: center;
             background-color: rgb(255, 255, 255);
             width: 100%;
-
+            
             border: 3px dotted blue;
         }
-
-            .navbar-list {
+        
+        .navbar-list {
                 display: block;
             }
 
@@ -86,13 +85,12 @@
             width: 35%;
         }
 
-            .hello-container {
-                font-size: 200%;
-                margin: 0 0 0 10%;
+        .hello-container {
+            font-size: 200%;
+            margin: 0 0 0 10%;
             }
 
             .main-title {
-                text-align: center;
                 font-size: 200%;
             }
 
@@ -101,13 +99,13 @@
                 font-size: 120%;
                 width: 75%;
                 border: 3px dotted rgb(0, 255, 98);
-                margin: -7% 0 0 11%;
+                margin: -10% 0 0 0;
             }
 
+            
 
-
-        .footer-container {
-            position: fixed;
+            .footer-container {
+                position: fixed;
             left: 0;
             bottom: 0;
             background-color: rgb(255, 255, 255);
@@ -115,36 +113,36 @@
             
             border: 3px dotted cyan;
         }
-
-            .footer-text {
-                font-size: 100%;
-                text-align: center;
-            }
+        
+        .footer-text {
+            font-size: 100%;
+            text-align: center;
+        }
+        
+        /* Media query for iPhone XR 414px max width*/
+        @media screen and (max-width: 414px) {
     
+            .title-container {
+                width: 80%;
+            }
+                
+                .hello-container {
+                    font-size: 110%;
+                    margin: 0 0 -8% 10.3%;
+                }
+    
+    
+                .p-below-title {
+                    font-size: 105%;
+                    width: 98%;
+                    margin: -12.5% 0 0 0;
+                }
+    
+                .main-title {
+                    font-size: 120%;
+                }
+            }
             
-    @media screen and (max-width: 1000px) {
-
-        .p-below-title {
-            font-size: 110%;
-            width: 100%;
-        }
-
-        .main-title {
-            font-size: 200%;
-        }
-    }
-
-    @media screen and (max-width: 438px) {
-
-        .p-below-title {
-            font-size: 100%;
-            width: 100%;
-        }
-
-        .main-title {
-            font-size: 100%;
-        }
-    }
 
     </style>
 

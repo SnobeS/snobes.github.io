@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Loops</title>
+</head>
+<body>
+    
+
+
+    <script>
+        
+        var names = ["Miko", "Roni", "Remo"]
+
+        var words = "Lorem ipsum dolor sit amet consectetur adipiscing elit Vivamus nisi justo pellentesque vitae lacus nec, ullamcorper sagittis lacus. Pellentesque augue mauris, tincidunt quis vestibulum id, ullamcorper mollis elit. Aliquam rhoncus ante justo, vel ullamcorper sem tincidunt vel. Sed vel risus sed enim commodo maximus nec eget lectus. Vivamus vitae quam.".split(" ")
+
+
+      /* function toEmailAddress(name) {
+            return name.toLowerCase() + "@gmail.com"
+        } */
+
+        for(var i = 0; i < words.length; i++) {
+            var currentEmail = words[i].toLowerCase() + "@gmail.com"
+
+            if(i % 2 == 0) {
+                continue;
+            }
+            
+            //if(i==10) {
+            //    break;
+            //}
+            console.log(i, currentEmail)
+        }
+        
+        
+
+       // for(var i=0; i < 10; i++) {
+       //     console.log(i)
+       // }
+
+    </script>
+
+</body>
+</html>
