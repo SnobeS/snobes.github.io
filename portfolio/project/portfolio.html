@@ -8,10 +8,6 @@
 </head>
 <body>
     
-    <!-- Upper title -->
-    <div class="upper-title-container">
-        <h1 class="title-portfolio">Portfolio</h1>
-    </div>
 
     <!-- Horizontal navigation bar -->
     <div class="topnav-container">
@@ -46,7 +42,7 @@
     
     <footer>
         <div class="footer-container">
-            <p class="footer-text">Miko Lehtola</p>
+            <p class="footer-text">Miko Lehtola 2023</p>
         </div>
     </footer>
     
@@ -58,90 +54,115 @@
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         }
         
-        .upper-title-container {
-            border: 3px dotted green;
-            text-align: center;
-            width: 8%;
+        /* Navigation bar */
+        
+        ul.navbar-list {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+            border-radius: 25px;
+        }
+        
+        ul.navbar-list li {
+            float: left;
         }
 
+        ul.navbar-list li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 20px 24px;
+            text-decoration: none;
+            font-size: 120%;
+        }
+
+        .navbar-list a:hover {
+            background-color: #222;
+        }
+
+        /**/
         .topnav-container {
             margin: 0;
             padding: 0;
             text-align: center;
-            background-color: rgb(255, 255, 255);
             width: 100%;
-            
-            border: 3px dotted blue;
+            display: block;
         }
-        
-        .navbar-list {
-                display: block;
-            }
 
         .title-container {
             float: left;
             margin-left: 10%;
             border: 3px dotted red;
-            width: 35%;
+            width: 40%;
         }
 
         .hello-container {
             font-size: 200%;
-            margin: 0 0 0 10%;
-            }
+            margin: 0;
+        }
 
-            .main-title {
-                font-size: 200%;
-            }
+        .main-title {
+            font-size: 200%;
+        }
 
-            .p-below-title {
-                text-align: center;
-                font-size: 120%;
-                width: 75%;
-                border: 3px dotted rgb(0, 255, 98);
-                margin: -10% 0 0 0;
-            }
+        .p-below-title {
+            text-align: center;
+            font-size: 130%;
+            width: 75%;
+            border: 3px dotted rgb(0, 170, 14);
+            margin: -10% 0 0 0;
+        }
 
-            
-
-            .footer-container {
-                position: fixed;
+        .footer-container {
+            position: fixed;
             left: 0;
             bottom: 0;
-            background-color: rgb(255, 255, 255);
+            background-color: #222;
             width: 100%;
-            
-            border: 3px dotted cyan;
-        }
-        
-        .footer-text {
+            color: white;
             font-size: 100%;
             text-align: center;
         }
         
         /* Media query for iPhone XR 414px max width*/
         @media screen and (max-width: 414px) {
+
+            .upper-title-container {
+                left: 50%;
+            }
+
+            .title-portfolio {
+                text-align: center;
+                left: 50%;
+            }
+
     
+            ul.navbar-list li.right,
+            ul.navbar-list li {float: none;}
+
             .title-container {
                 width: 80%;
             }
                 
-                .hello-container {
-                    font-size: 110%;
-                    margin: 0 0 -8% 10.3%;
-                }
-    
-    
-                .p-below-title {
-                    font-size: 105%;
-                    width: 98%;
-                    margin: -12.5% 0 0 0;
-                }
-    
-                .main-title {
-                    font-size: 120%;
-                }
+            .hello-container {
+                font-size: 110%;
+                margin: 0;
             }
+    
+    
+            .p-below-title {
+                font-size: 105%;
+                width: 100%;
+                margin: 0;
+            }
+    
+            .main-title {
+                font-size: 110%;
+            }
+
+        }
             
 
     </style>
