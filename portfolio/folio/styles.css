@@ -10,7 +10,7 @@ body {
 .navbar-container {
     margin: 0 auto;
     border: 5px dotted rgba(18, 255, 18, 0);
-    width: 99%;
+    width: 100%;
 }
 
 .navbar {
@@ -20,8 +20,7 @@ body {
     border-radius: 25px;
     background-color: rgba(59, 59, 59, 0.829);
     position: sticky;        
-    display: flex;
-    justify-content: center;
+    
 }
 
 .navbar li a {
@@ -99,7 +98,14 @@ body {
 
 
 
+@media screen and (min-width: 415px) {
+    
+    .navbar {
+        display: flex;
+        justify-content: center;
 
+    }
+}
 
 /*Responsive design for iPhone XR model, max width is 414px */
 @media screen and (max-width: 414px) {
@@ -117,7 +123,7 @@ body {
     ul.navbar li {float: none;}
     
     .navbar {
-        background-color: rgba(59, 59, 59, 0.829);
+        background-color: rgba(59, 59, 59, 0.89);
         width: 95%;
     }
    
@@ -128,7 +134,8 @@ body {
     .main-text-container {
         width: 60%;
         text-align: center;
-        margin-top: 25%;
+        margin: 15% 0 5% 17.5%;
+        border: 3px dotted green;
     }
 
     .title-name {
@@ -140,7 +147,7 @@ body {
     }
 
     .button-contact {
-        padding: 3% 7% 3% 7%;
-        margin: 10% 0 0 35%;
+        padding: 4% 10% 4% 10%;
+        margin: 10% 0 0 30%;
     }
 }

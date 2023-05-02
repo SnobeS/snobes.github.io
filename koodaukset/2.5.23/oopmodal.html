@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OOP Modal</title>
+</head>
+
+    <style>
+
+        .modal {
+          display: none; 
+          position: fixed; 
+          width: 100%; 
+          height: 100%; 
+          left: 0;
+          top: 0;
+          overflow: auto; 
+          background-color: rgb(255, 255, 255); 
+          background-color: rgba(0, 0, 0, 0.397); 
+        }
+
+        .modal-kontsa {
+          background-color: #fefefe;
+          margin: 15% auto;
+          padding: 20px;
+          border: 3px solid rgb(55, 108, 255);
+          width: 20%; 
+        }
+
+        .sulje {
+          color: rgb(0, 0, 0);
+          float: right;
+          font-size: 32px;
+        }
+
+
+    </style>
+
+<body>
+    
+    <button id="munNappi">Avaa</button>
+
+    <div id="modali" class="modal">
+        <div class="modal-kontsa">
+            <span class="sulje">&times;</span>
+            <p>Moikka Moi!</p>
+        </div>
+    </div>
+
+    <script>
+
+        var modal = document.getElementById("modali");
+        var nappi = document.getElementById("munNappi");
+        var sulkee = document.getElementsByClassName("sulje")[0];
+
+        nappi.onclick = function() {
+          modal.style.display = "block";
+        }
+
+        sulkee.onclick = function() {
+          modal.style.display = "none";
+        }
+
+        window.onclick = function(event) {
+          if (event.target == modal) {
+            modal.style.display = "none";
+          }
+        }
+
+    </script>
+
+</body>
+</html>
