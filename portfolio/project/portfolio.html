@@ -56,7 +56,7 @@
         
         /* Navigation bar */
         
-        ul.navbar-list {
+        .navbar-list {
             list-style-type: none;
             margin: 0;
             padding: 0;
@@ -65,17 +65,18 @@
             border-radius: 25px;
         }
         
-        ul.navbar-list li {
+        .navbar-list li {
             float: left;
         }
 
-        ul.navbar-list li a {
+        .navbar-list li a {
             display: block;
             color: white;
             text-align: center;
             padding: 20px 24px;
             text-decoration: none;
             font-size: 120%;
+            
         }
 
         .navbar-list a:hover {
@@ -163,11 +164,16 @@
             }
 
         }
+
+        @media screen and (max-width: 414px) {
+
+            .navbar-list li {
+                display: block;
+            }
+        }
             
 
     </style>
-
-    <script></script>
 
 </body>
 </html>
