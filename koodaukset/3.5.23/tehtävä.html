@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h2>Syötä yhteystiedot tähän: </h2>
+
+    <form>
+        <input type="text" placeholder="Etunimi" class="etu">
+        <br>
+        <input type="text" placeholder="Sukunimi" class="suku">
+        <br>
+        <input type="text" placeholder="Sähköposti" class="sposti">
+        <br>
+        <button type="submit" onclick="tiedotFunktio()">Lähetä</button>
+    </form>
+
+    <script>
+
+        var etunimi = document.querySelector(".etu").innerText
+        var sukunimi = document.querySelector(".suku").innerText
+        var sähköposti = document.querySelector(".sposti").innerText
+
+        function tiedotFunktio() {
+            if(etunimi !== undefined){
+                alert("Nimi: " + etunimi + ", Sukunimi: " + sukunimi + ", Sähköposti: " + sähköposti)
+            } else {
+                alert("Et syöttänyt tietoja")
+            }
+        }
+
+    </script>
+
+</body>
+</html>
