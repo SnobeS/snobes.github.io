@@ -1,6 +1,6 @@
 body {
     font-family:sans-serif;
-    background-image: url("https://images4.newscred.com/Zz1kNmFkYmFmNzhlNGIxMWViYTU1ZDFmYjg0ZWI5MTc4Zg==");
+    /*background-image: url("https://images4.newscred.com/Zz1kNmFkYmFmNzhlNGIxMWViYTU1ZDFmYjg0ZWI5MTc4Zg=="); */
     background-repeat: no-repeat;
     background-size: 100%;
     background-color: rgb(37, 37, 37);
@@ -17,10 +17,8 @@ body {
     list-style-type: none;
     overflow: hidden;
     padding: 0;
-    border-radius: 25px;
     background-color: rgba(59, 59, 59, 0.829);
-    position: sticky;        
-    
+    position: sticky;            
 }
 
 .navbar li a {
@@ -54,6 +52,22 @@ body {
     font-weight: 100;
     margin: -1% 0 3% 0;
     font-size: 150%;
+}
+
+.para-blw-title-gradient {
+    background-color: red;
+    background-image: linear-gradient(45deg, #f3ec78, #af4261);
+    background-size: 100%;
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    font-family: "Archivo Black", sans-serif;
+    font-weight: normal;
+    text-align: center;
+    margin-bottom: 0;
+    margin-bottom: -0.25em;
 }
 
 
