@@ -1,3 +1,5 @@
+
+/* Body applies all these stylings for the entire page, here you have color for the fonts, font family and background image */
 body {
     color: white;
     font-family: 'Sarabun';
@@ -5,21 +7,24 @@ body {
     background-size: cover;
 }
 
+
+/* This is top navigation */
 .topnav {
     margin: 3% 0 0 30%;
 }
 
+    /* This is for top nav's unordered list */
     .topnav ul{
     width: 50%;
     text-align: center;
     }
-
+        /* This is for top nav's list items */
         .topnav li {
         margin: 0;
         padding: 0;
         display: inline-block;
         }
-
+            /* Styling for top nav's links, padding, margin, font size, etc.. */
             .topnav a {
             display: block;
             padding: 8px;
@@ -28,11 +33,13 @@ body {
             font-size: 150%;
             text-decoration: none;
             }
-
+                /* Changes style of top nav's link when you hover over it */
                 .topnav a:hover {
                 color: #ffffff;
                 font-weight: bold;
                 }
+
+
 
 .title-container {
     width: 25%;    
@@ -75,34 +82,34 @@ body {
         border: 2px solid white;
     }
 
-.secondary-button    {
-    padding: 15px 47px;
-    border: 2px solid #e4e4e4;
-    border-radius: 15px;
-    font-size: 100%;
-    background-color: rgba(255, 255, 255, 0);
-    color: white;
-    margin: 0 0 0 40%;
-}
+/* .secondary-button    { */
+    /* padding: 15px 47px; */
+    /* border: 2px solid #e4e4e4; */
+    /* border-radius: 15px; */
+    /* font-size: 100%; */
+    /* background-color: rgba(255, 255, 255, 0); */
+    /* color: white; */
+    /* margin: 0 0 0 40%; */
+/* } */
 
-    .secondary-button:hover {
-    background-color: #757575;
-    color: rgb(255, 255, 255);
-    border: 2px solid white;
-    }
+    /* .secondary-button:hover { */
+    /* background-color: #757575; */
+    /* color: rgb(255, 255, 255); */
+    /* border: 2px solid white; */
+    /* } */
 
 
-.image-container {
-    float: right;
-    margin: -19.5% 0 0 0;
-}
+/* .image-container { */
+    /* float: right; */
+    /* margin: -19.5% 0 0 0; */
+/* } */
 
-.image-onright {
-    width: 25%;
-    border: 2px solid white;
-    padding: 10%;
-    border-radius: 15px;
-}
+/* .image-onright { */
+    /* width: 25%; */
+    /* border: 2px solid white; */
+    /* padding: 10%; */
+    /* border-radius: 15px; */
+/* } */
 
 .footer-container {
     position: fixed;
