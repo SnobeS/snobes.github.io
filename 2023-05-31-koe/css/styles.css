@@ -1,12 +1,15 @@
+/* Tämä tägi antaa tyylin kaikille elementeille vakiona */
 body {
     color: blue;
     background-color: rgb(133, 59, 75);
 }
 
+/* halusin otsikoille punaiset värit niin tarkensin tällä sitä */
 h2, h3 {
     color: red;
 }
 
+/* sininen teksti napissa */
 button {
     color: blue;
 }
