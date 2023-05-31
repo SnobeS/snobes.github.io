@@ -1,0 +1,12 @@
+body {
+    color: blue;
+    background-color: rgb(133, 59, 75);
+}
+
+h2, h3 {
+    color: red;
+}
+
+button {
+    color: blue;
+}
