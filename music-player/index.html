@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Musiikki Soitin</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="player">
+        <!-- <img src="" alt=""> -->
+    <audio id="player" ontimeupdate="updateProgress()">
+        <source id="source">
+        Ääni ei tuettu
+    </audio>
+
+    <progress id="progress" value="0" max="100"></progress>
+
+    <div id="controls">
+        <p id="currentSong"></p>
+        <div class="controls_wrapper">
+            <span onclick="playAudio()">&#9658;</span>
+            <span onclick="pauseAudio()">&#10074;&#10074;</span>
+        </div>
+        <p>Volume:</p>
+        <div class="volume">
+            <span>-</span>
+            <input type="range" id="volumeSlider" min="0" max="1" step="0.01">
+            <span>+</span>
+        </div>
+    </div>
+
+    <h2>Songs</h2>
+    <div id="songList"></div>
+    <p></p>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
