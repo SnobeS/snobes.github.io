@@ -2,6 +2,7 @@
 const songs = [
     "KERZA - Tuulel.mp3",
     "Costi - 5.mp3",
+    "Joe L - Lupaus.mp3"
 ]
 const player = document.getElementById('player');
 
@@ -17,6 +18,12 @@ function createSongList() {
     return list
 }
 
+const currentSong = document.querySelector("#currentSong");
+
+if(currentSong.innerText == "") {
+    currentSong.innerText = "Valitse Kappale";
+}
+
 const songList = document.getElementById("songList");
 songList.appendChild(createSongList());
 
@@ -25,8 +32,8 @@ songList.onclick = function (e) {
     const source = document.getElementById("source");
     source.src = "songs/" + e.target.innerText;
 
-    document.querySelector("#currentSong").innerText = `Nyt soi: ${e.target.innerText}`;
-
+    currentSong.innerText = `Nyt soi: ${e.target.innerText}`;
+ 
     player.load()
     player.play()
 }
